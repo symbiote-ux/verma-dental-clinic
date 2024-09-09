@@ -17,7 +17,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: 'Dr Verma Dental Clinic and Braces Center Dehradun',
+  title: 'Dr. Verma’s Dental Surgery & Braces Centre',
   description: 'Best dental services in Dehradun',
 };
 
