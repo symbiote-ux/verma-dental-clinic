@@ -6,20 +6,20 @@ export default function Footer() {
   return (
     <footer className="bg-[#18A2BB] text-white py-6">
       <div className="max-w-7xl mx-auto px-4">
-        <div className="flex items-center space-x-2">
-          <Image
-            src="/images/smileschangeslives-logo.png"
-            alt="smiles changes lives logo"
-            width={50}
-            height={50}
-          />
-          <h1 className="text-lg font-bold">
-            Dr. Verma’s Dental Surgery & Braces Centre
-          </h1>
-        </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {/* Navigation Links */}
           <div>
+            <div className="flex items-center space-x-2">
+              <Image
+                src="/images/smileschangeslives-logo.png"
+                alt="smiles changes lives logo"
+                width={50}
+                height={50}
+              />
+              <h1 className="text-lg font-bold">
+                Dr. Verma’s Dental Surgery & Braces Centre
+              </h1>
+            </div>
+            {/* Navigation Links */}
             <ul className="mt-4 space-y-2">
               <li>
                 <Link
