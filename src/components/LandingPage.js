@@ -3,8 +3,8 @@ import Link from 'next/link';
 
 export default function LandingPage() {
   return (
-    <div className="bg-[#FFF7F0]">
-      <div className="flex flex-col md:flex-row items-center justify-center h-screen max-w-7xl  mx-auto px-4 space-y-6 md:space-y-0 md:space-x-8">
+    <div className="bg-[#FFF7F0] pt-12 lg:p-0">
+      <div className="flex flex-col md:flex-row items-center justify-center h-screen max-w-7xl  mx-auto px-4 space-y-6 md:space-y-0 md:space-x-8 lg:-mt-16">
         <div className="flex-1 text-center md:text-left">
           <h2 className="text-xl text-[#18A2BB] md:text-2xl text-left font-bold mb-4">
             Relaxed office. Experienced team. Exceptional care.
@@ -23,7 +23,7 @@ export default function LandingPage() {
         </div>
 
         {/* Image Section */}
-        <div className="flex-1">
+        <div className="flex-1 mt-5">
           <Image
             src="/images/front-view.jpg"
             alt="Dental Clinic reception image"

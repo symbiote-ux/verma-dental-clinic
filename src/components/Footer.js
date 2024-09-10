@@ -12,13 +12,13 @@ export default function Footer() {
           <div className="text-center sm:text-left">
             <div className="flex justify-center sm:justify-start items-center space-x-3">
               <Image
-                src="/images/smileschangeslives-logo.png"
+                src="/logo/smileschangeslives-logo.png"
                 alt="smiles changes lives logo"
                 width={50}
                 height={50}
                 className="object-contain"
               />
-              <h1 className="text-xl md:text-2xl font-bold leading-tight">
+              <h1 className="text-xl md:text-2xl -ml-2 font-bold leading-tight">
                 Dr. Verma’s Dental Surgery & Braces Centre
               </h1>
             </div>
@@ -76,21 +76,28 @@ export default function Footer() {
             {/* Address Section */}
             <div className="flex justify-center sm:justify-start items-center mb-3 space-x-2">
               <p className="text-sm md:text-base">
-                Dr. Ram Parkash Verma Memorial Centre,
-                58/12, Gandhi Rd, Prince Chowk, Dhamawala Mohalla, Paltan Bazaar, Dehradun, Uttarakhand 248001
+                Dr. Ram Parkash Verma Memorial Centre, 58/12, Gandhi Rd, Prince
+                Chowk, Dhamawala Mohalla, Paltan Bazaar, Dehradun, Uttarakhand
+                248001
               </p>
             </div>
 
             {/* Phone Section (Icon for Mobile) */}
             <div className="flex justify-center sm:justify-start items-center mb-3 space-x-2">
-              <a href="tel:07500225225" className="text-sm md:text-base font-semibold hover:text-[#0f4e5f] transition">
+              <a
+                href="tel:07500225225"
+                className="text-sm md:text-base font-semibold hover:text-[#0f4e5f] transition"
+              >
                 075002 25225
               </a>
             </div>
 
             {/* Email Section (Icon for Mobile) */}
             <div className="flex justify-center sm:justify-start items-center mb-3 space-x-2">
-              <a href="mailto:sudhanshuverma19842022@yahoo.com" className="text-sm md:text-base font-semibold hover:text-[#0f4e5f] transition">
+              <a
+                href="mailto:sudhanshuverma19842022@yahoo.com"
+                className="text-sm md:text-base font-semibold hover:text-[#0f4e5f] transition"
+              >
                 sudhanshuverma19842022@yahoo.com
               </a>
             </div>
@@ -107,7 +114,8 @@ export default function Footer() {
 
         {/* Copyright Section */}
         <div className="mt-10 border-t border-gray-300 pt-6 text-center text-sm md:text-base">
-          © {new Date().getFullYear()} Dr. Verma’s Dental Surgery & Braces Centre. All rights reserved.
+          © {new Date().getFullYear()} Dr. Verma’s Dental Surgery & Braces
+          Centre. All rights reserved.
         </div>
       </div>
     </footer>

@@ -9,13 +9,15 @@ export default function Header() {
   return (
     <header className="sticky top-0 bg-[#FFF7F0] z-50 text-[#1D1D1D] shadow-md">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-center md:justify-between items-center p-4">
-        <div className="flex items-center space-x-4 mb-4 md:mb-0">
-          <Image
-            src="/images/smileschangeslives-logo.png"
-            alt="Smiles Changes Lives logo"
-            width={50}
-            height={50}
-          />
+        <div className="flex items-center  mb-4 md:mb-0">
+          <Link href="/">
+            <Image
+              src="/logo/smileschangeslives-logo.png"
+              alt="Smiles Changes Lives logo"
+              width={50}
+              height={50}
+            />
+          </Link>
           <h1 className="text-xl font-bold text-[#1D1D1D]">
             Dr. Verma’s Dental Surgery & Braces Centre
           </h1>
@@ -64,13 +66,22 @@ export default function Header() {
 
         {/* Navbar Links - visible on large screens */}
         <nav className="hidden md:flex space-x-6 items-center">
-          <Link href="/about" className="text-[#1D1D1D] hover:text-[#18A2BB] font-semibold transition duration-300">
+          <Link
+            href="/about"
+            className="text-[#1D1D1D] hover:text-[#18A2BB] font-semibold transition duration-300"
+          >
             About
           </Link>
-          <Link href="/services" className="text-[#1D1D1D] hover:text-[#18A2BB] font-semibold transition duration-300">
+          <Link
+            href="/services"
+            className="text-[#1D1D1D] hover:text-[#18A2BB] font-semibold transition duration-300"
+          >
             Services
           </Link>
-          <Link href={`tel:07500225225`} className="flex items-center space-x-2">
+          <Link
+            href={`tel:07500225225`}
+            className="flex items-center space-x-2"
+          >
             <button className="text-lg text-white bg-[#18A2BB] font-semibold rounded-full border-2 border-transparent p-2 px-4 hover:bg-white hover:text-[#18A2BB] hover:border-[#18A2BB] transition duration-300">
               075002 25225
             </button>
@@ -83,12 +94,18 @@ export default function Header() {
         <nav className="md:hidden bg-[#18A2BB] shadow-md">
           <ul className="flex flex-col items-center space-y-2 p-4">
             <li>
-              <Link href="/about" className="text-white font-semibold text-lg hover:text-[#18A2BB]">
+              <Link
+                href="/about"
+                className="text-white font-semibold text-lg hover:text-[#424242]"
+              >
                 About
               </Link>
             </li>
             <li>
-              <Link href="/services" className="text-white font-semibold text-lg hover:text-[#18A2BB]">
+              <Link
+                href="/services"
+                className="text-white font-semibold text-lg hover:text-[#424242]"
+              >
                 Services
               </Link>
             </li>
