@@ -3,7 +3,7 @@ import Image from 'next/image';
 const generalDentistry = '/logo/general-dentistry.png';
 const restorativeDentistry = '/logo/restorative-dentistry.png';
 const cosmeticDentistry = '/logo/cosmetic-dentistry.png';
-const specialisedCare = '/logo/specialised-care.jpg';
+const specialisedCare = '/logo/specialised-care.png';
 const orthodontics = '/logo/orthodontics.png';
 
 const keyFeatures = [
@@ -103,8 +103,8 @@ export default function Services() {
       </section>
 
       {/* Key Features */}
-      <section className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <section className="grid grid-cols-1  gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 gap-6">
           <div className="flex flex-wrap justify-center gap-6">
             <div className="flex flex-wrap justify-center gap-6">
               {keyFeatures.map((feature, index) => (
