@@ -12,7 +12,7 @@ export default function Header() {
         <div className="flex items-center  mb-4 md:mb-0">
           <Link href="/">
             <Image
-              src="/images/smileschangeslives-logo.png"
+              src="/logo/smileschangeslives-logo.png"
               alt="Smiles Changes Lives logo"
               width={50}
               height={50}

@@ -12,7 +12,7 @@ export default function Footer() {
           <div className="text-center sm:text-left">
             <div className="flex justify-center sm:justify-start items-center space-x-3">
               <Image
-                src="/images/smileschangeslives-logo.png"
+                src="/logo/smileschangeslives-logo.png"
                 alt="smiles changes lives logo"
                 width={50}
                 height={50}
