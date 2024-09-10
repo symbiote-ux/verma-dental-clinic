@@ -7,6 +7,19 @@
   --foreground: #171717;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+html {
+  overflow-y: scroll;
+  scrollbar-width: none; /* For Firefox */
+}
+
+html::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Edge */
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;

@@ -1,23 +1,48 @@
 'use client';
+import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-800 text-white py-6">
+    <footer className="bg-[#18A2BB] text-white py-6">
       <div className="max-w-7xl mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {/* Navigation Links */}
           <div>
-            <h3 className="text-lg font-bold">Quick Links</h3>
+            <div className="flex items-center space-x-2">
+              <Image
+                src="/images/smileschangeslives-logo.png"
+                alt="smiles changes lives logo"
+                width={50}
+                height={50}
+              />
+              <h1 className="text-lg font-bold">
+                Dr. Verma’s Dental Surgery & Braces Centre
+              </h1>
+            </div>
+            {/* Navigation Links */}
             <ul className="mt-4 space-y-2">
               <li>
-                <Link href="/services">Services</Link>
+                <Link
+                  href="/about"
+                  className="hover:text-[#18A2BB] font-semibold"
+                >
+                  About
+                </Link>
               </li>
               <li>
-                <Link href="/contact-us">Contact Us</Link>
+                <Link
+                  href="/services"
+                  className="font-semibold hover:text-[#18A2BB]"
+                >
+                  Services
+                </Link>
               </li>
               <li>
-                <Link href="/about-us">About Us</Link>
+                <Link href={`tel:${'075002 25225'}`}>
+                  <button className="flex items-center text-lg justify-center text-[#18A2BB]  font-semibold bg-white rounded-md border-2 border-transparent p-2 px-4 hover:bg-[#18A2BB] hover:text-white hover:border-white transition-all duration-300">
+                    075002 25225
+                  </button>
+                </Link>
               </li>
             </ul>
           </div>
@@ -26,10 +51,12 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-bold">Our Location</h3>
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509586!2d144.95592831575723!3d-37.817209742021655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf5779f8f04515d7a!2sFederation+Square!5e0!3m2!1sen!2sus!4v1536780224725"
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13776.867436453103!2d78.0379616!3d30.3163489!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390929941f3d6f47%3A0x15bf8e5afb610078!2sDr.%20Verma%E2%80%99s%20Dental%20Surgery%20%26%20Braces%20Centre!5e0!3m2!1sen!2sin!4v1725954218022!5m2!1sen!2sin"
               width="100%"
-              height="200"
-              frameBorder="0"
+              height="230"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
               allowFullScreen=""
               aria-hidden="false"
               tabIndex="0"
@@ -41,14 +68,16 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-bold">Contact Us</h3>
             <p className="mt-4">
-              Address: 123 Dental Clinic Ave, Suite 200, New York, NY 10001
+              Address: Dr. Ram Parkash Verma Memorial Centre, 58/12, Gandhi Rd,
+              Prince Chowk, Dhamawala Mohalla, Paltan Bazaar, Dehradun,
+              Uttarakhand 248001
             </p>
-            <p>Phone: (123) 456-7890</p>
-            <p>Email: info@dentalclinic.com</p>
+            <p>Phone: 075002 25225</p>
+            <p>Email: sudhanshuverma19842022@yahoo.com</p>
             <p className="mt-4">Working Hours:</p>
             <ul>
-              <li>Mon - Fri: 9:00 AM - 6:00 PM</li>
-              <li>Sat: 9:00 AM - 2:00 PM</li>
+              <li>Mon - Fri: 10:30 AM - 02:00 PM 05:00 PM - 08:00 PM </li>
+              <li>Sat: 10:30 AM - 02:00 PM 05:00 PM - 07:00 PM</li>
               <li>Sun: Closed</li>
             </ul>
           </div>
