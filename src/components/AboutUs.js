@@ -5,33 +5,33 @@ const doctors = [
     name: 'Dr. Sudhanshu Verma',
     role: 'Senior Dentist [Managing Director]',
     yearsOfExperience: '17+ years',
-    imageSrc: '/images/dr-sudhanshu-verma.jpg',
+    imageSrc: '/images/dr.jpeg',
     details:
       'Dr. Sudhanshu Verma is the managing director of Dr. Vermas Dental Surgery Centre. He did graduation from V.S Dental College and hospital in the year 2007 and MDS in Orthodontics and Dentofacial Orhopaedics from Bangalore, Rajiv Gandhi University Of Health Sciences. His extensive clinical experience has involved completing treatment for over 3000 patients and is especially gifted with the art of orthodontic treatment. The specialty includes growth modulation treatment, fixed mechanotherapy (metal, ceramic, lingual and clear aligners), surgical correction of skeletal malocclusion. He also practices in rural areas to provide quality dental care to the underprivileged patients from the rural areas. Currently he is working as Assistant Professor in the Department of Orthodontics and Dentofacial Orthopaedics at UDMRI, Dehradun. To his credit he has publications in both National and International Journals and has also presented papers at various National and International Conferences. Formerly he was resident doctor at the dental department in Dr. Ram Manohar Lohia Hospital, New Delhi.',
   },
   {
-    name: 'Dr. Jane Doe',
-    role: 'Orthodontist',
-    yearsOfExperience: 10,
-    imageSrc: '/images/dr-jane-doe.jpg',
+    name: 'Dr. Nitin Sethi',
+    role: 'Prosthodontics',
+    yearsOfExperience: 12,
+    imageSrc: '/images/dr.jpeg',
     details:
-      'Dr. Jane Doe is an experienced orthodontist with a decade of experience in creating beautiful, straight smiles. She utilizes cutting-edge technology to provide the best orthodontic care for patients of all ages.',
+      'Dr. Nitin Sethi graduated from well known Govt Dental college, Amritsar and hospital and subsequently completed his MDS in the branch of Prosthodontics from Govt Dental College, Ahemadabad and was formerly resident at PGI, Chandigarh. He is passionate towards prosthodontic skills and is successfully practicing since 12 years. The speciality includes Crowns, Bridges, Complete dentures, Full mouth Rehabilitation, Oral Implantoloy and Smile designing, Maxillofacial Prosthodontics. He is currently working as a Professor at Himachal Dental College.',
   },
   {
-    name: 'Dr. John Smith',
-    role: 'Senior Dentist',
+    name: 'Dr. Simika Verma',
+    role: 'Endodontics',
+    yearsOfExperience: 12,
+    imageSrc: '/images/dr1.jpeg',
+    details:
+      'Dr. Simika Verma graduated in the year 2012 from VS Dental College, Bangalore and subsequently did her Post Graduate certificate course from the prestigious Maulana Azad Dental College, New Delhi in Endodontics.She has carried out over 2000 root canal procedures and excels in various esthetic procedures like bleaching & whitening of teeth, Ceramic Crowns. Formerly She was resident doctor at the dental department in Dr. Ram Manohar Lohia Hospital, New Delhi.',
+  },
+  {
+    name: 'Dr. Anshdeep Singh',
+    role: 'Dental Surgeon, Endodontist',
     yearsOfExperience: 15,
-    imageSrc: '/images/dr-john-smith.jpg',
+    imageSrc: '/images/dr.jpeg',
     details:
-      'Dr. John Smith has been practicing dentistry for over 15 years. He specializes in cosmetic and restorative dentistry, helping patients achieve their dream smiles with advanced techniques and compassionate care.',
-  },
-  {
-    name: 'Dr. Jane Doe',
-    role: 'Orthodontist',
-    yearsOfExperience: 10,
-    imageSrc: '/images/dr-jane-doe.jpg',
-    details:
-      'Dr. Jane Doe is an experienced orthodontist with a decade of experience in creating beautiful, straight smiles. She utilizes cutting-edge technology to provide the best orthodontic care for patients of all ages.',
+      'Dr. Anshdeep Singh is a Dental Surgeon and Endodontist in Dehradun. Dehradun and has an experience of 15 years in these fields. Dr. Anshdeep Singh practices at Vermas Dental Surgery & Braces Centre in Dehradun, Dehradun. He completed BDS from Sree Balaji Dental College & Hospital in 2009 and MDS-Conservative Dentistry & Endodontics from Teerthanker Mahaveer Dental College Research Centre in 2013. He is a member of Indian Dental Association, Indian Association of Conservative Dentistry and Endodontics (IACDE) and Indian Endodontic Society',
   },
 ];
 

@@ -10,6 +10,22 @@ export default function PhotoCollage() {
     '/images/photo4.jpg',
     '/images/photo5.jpg',
     '/images/photo6.jpg',
+    '/images/photo7.jpg',
+    '/images/photo8.jpg',
+    '/images/photo9.jpg',
+    '/images/photo10.jpg',
+    '/images/photo11.jpg',
+    '/images/photo12.jpg',
+    '/images/photo13.jpg',
+    '/images/photo14.jpg',
+    '/images/photo15.jpg',
+    '/images/photo16.jpg',
+    '/images/photo17.jpg',
+    '/images/photo18.jpg',
+    '/images/photo19.jpg',
+    '/images/photo20.jpg',
+    '/images/photo21.jpg',
+    '/images/photo22.jpg',
   ];
 
   return (
@@ -19,12 +35,13 @@ export default function PhotoCollage() {
         {images.map((src, index) => (
           <div
             key={index}
-            className="relative h-40 sm:h-48 md:h-56 lg:h-64 overflow-hidden"
+            className="relative w-full h-40 sm:h-48 md:h-56 lg:h-64 overflow-hidden"
           >
             <Image
               src={src}
               alt={`Collage Image ${index + 1}`}
-              fill
+              width={300}
+              height={450}
               objectFit="cover"
               className="rounded-lg"
             />

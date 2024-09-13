@@ -5,21 +5,20 @@ import Link from 'next/link';
 export default function Reviews() {
   const reviews = [
     {
-      name: 'John Doe',
+      name: 'Susan John [Visited Dr. Sudhanshu Verma (Orthodontist) For Aesthetic Dentistry RCT - Root Canal Treatment]',
       review:
-        'Dr. Verma and his team are truly exceptional! They made my dental experience pleasant and stress-free. Highly recommend!',
+        'Happy with: Doctor friendliness, Value for money, Treatment satisfaction Wait time. The doctor was very understanding and helped to provide the best treatment plan for my condition at the best price. Both Dr. Sudhanshu and Dr. Simika are very friendly. They are able to give appointments as per our convenience and very competent in their work. They are understanding and prompt to address our issues. The staff at the clinic are also very friendly. Clinic is well set up with a variety of treatment options available for orthodontic and endodontic problems. They even offer invisalign braces.',
     },
     {
-      name: 'Jane Smith',
+      name: 'Aslam Khan [Visited Dr. Sudhanshu Verma (Orthodontist) For Straightening Teeth (Conventional Braces)]',
       review:
-        'I had a wonderful experience at Dr. Verma’s clinic. The staff is warm, friendly, and professional. My dental issues were resolved with precision and care.',
+        "Happy with: Doctor friendliness, Explanation of the health issue, Treatment satisfaction. It's a great experience getting my teeth fixed. Dr, Sudhanshu explains everything in detail, deals very politely with his patients. Gives sufficient time to patients, listen to them in patience and provides best solution in reasonable rates. I would definitely recommend him and give him A++++++ rating. Thanks Sudhanshu!!",
     },
     {
-      name: 'David Brown',
+      name: 'Karan Chandna',
       review:
-        'Best dental care I’ve ever received! Dr. Verma took the time to explain the treatment and the results exceeded my expectations.',
+        "The meticulous attention to detail and personalized approach at Verma's Dental Surgery & Braces centre truly set it apart. Dr. Sudhanshu Verma's expertise in orthodontics made my son’s  braces journey smooth, and the results exceeded my expectations. The cleanliness and state-of-the-art equipment showcased their commitment to high standards. From the friendly reception to the skilled dental hygienists, every aspect of my visit was exceptional. Verma's Dental Surgery earns my highest recommendation for comprehensive and quality dental care.",
     },
-    // You can add more reviews here
   ];
 
   return (
