@@ -82,7 +82,7 @@ const actualServices = [
 
 export default function Services() {
   return (
-    <div className="min-h-screen p-6 md:p-12 bg-gray-100">
+    <div id="services" className="min-h-screen p-6 md:p-12 bg-gray-100">
       {/* Heading and Paragraph */}
       <section className="text-center max-w-4xl mx-auto mb-10">
         <h1 className="text-3xl md:text-5xl font-bold mb-4">

@@ -10,10 +10,10 @@ export default function LandingPage() {
             Relaxed office. Experienced team. Exceptional care.
           </h2>
           <h1 className="text-5xl font-bold text-left  md:text-6xl mb-4">
-            Trusted Dehradun City Dentist
+            Dr.Verma’s Dental Surgery & Braces Centre
           </h1>
           <h2 className="text-xl text-[#18A2BB] text-left md:text-2xl font-bold mb-4">
-            Serving the Dehradun – Haridwar, Rishikesh Area.
+            Trusted Dehradun City Dentist.
           </h2>
           <Link href={`tel:${'075002 25225'}`}>
             <button className="flex items-center justify-center text-white bg-[#18A2BB] p-2 px-4 font-semibold  md:mt-6 rounded-3xl border-2 border-transparent hover:bg-white text-lg hover:text-[#18A2BB] hover:border-[#18A2BB] transition-all duration-300">

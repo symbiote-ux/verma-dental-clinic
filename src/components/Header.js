@@ -8,8 +8,8 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 bg-[#FFF7F0] z-50 text-[#1D1D1D] shadow-md">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-center md:justify-between items-center p-4">
-        <div className="flex items-center  mb-4 md:mb-0">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-start items-center p-4">
+        <div className="flex justify-start items-center w-full mb-4 md:mb-0">
           <Link href="/">
             <Image
               src="/logo/smileschangeslives-logo.png"
@@ -18,7 +18,8 @@ export default function Header() {
               height={50}
             />
           </Link>
-          <h1 className="text-xl font-bold text-[#1D1D1D]">
+          {/* Hide heading on small screens and show it on medium and larger screens */}
+          <h1 className="hidden md:block text-xl font-bold text-[#1D1D1D] ml-4">
             Dr. Verma’s Dental Surgery & Braces Centre
           </h1>
         </div>
@@ -65,26 +66,30 @@ export default function Header() {
         </div>
 
         {/* Navbar Links - visible on large screens */}
-        <nav className="hidden md:flex space-x-6 items-center">
+        <nav className="hidden md:flex space-x-6 items-center text-lg">
           <Link
-            href="/about"
+            href="#about"
             className="text-[#1D1D1D] hover:text-[#18A2BB] font-semibold transition duration-300"
           >
             About
           </Link>
           <Link
-            href="/services"
+            href="#services"
             className="text-[#1D1D1D] hover:text-[#18A2BB] font-semibold transition duration-300"
           >
             Services
           </Link>
           <Link
-            href={`tel:07500225225`}
-            className="flex items-center space-x-2"
+            href="#reviews"
+            className="text-[#1D1D1D] hover:text-[#18A2BB] font-semibold transition duration-300"
           >
-            <button className="text-lg text-white bg-[#18A2BB] font-semibold rounded-full border-2 border-transparent p-2 px-4 hover:bg-white hover:text-[#18A2BB] hover:border-[#18A2BB] transition duration-300">
-              075002 25225
-            </button>
+            Reviews
+          </Link>
+          <Link
+            href="#contact"
+            className="text-[#1D1D1D] hover:text-[#18A2BB] font-semibold transition duration-300"
+          >
+            Contact
           </Link>
         </nav>
       </div>
@@ -95,7 +100,7 @@ export default function Header() {
           <ul className="flex flex-col items-center space-y-2 p-4">
             <li>
               <Link
-                href="/about"
+                href="#about"
                 className="text-white font-semibold text-lg hover:text-[#424242]"
               >
                 About
@@ -103,10 +108,26 @@ export default function Header() {
             </li>
             <li>
               <Link
-                href="/services"
+                href="#services"
                 className="text-white font-semibold text-lg hover:text-[#424242]"
               >
                 Services
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="#reviews"
+                className="text-white font-semibold text-lg hover:text-[#424242]"
+              >
+                Reviews
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="#contact"
+                className="text-white font-semibold text-lg hover:text-[#424242]"
+              >
+                Contact Us
               </Link>
             </li>
           </ul>

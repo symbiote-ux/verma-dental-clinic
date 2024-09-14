@@ -11,7 +11,7 @@ const jost = Jost({
 
 export const metadata: Metadata = {
   title: 'Dr. Verma’s Dental Surgery & Braces Centre',
-  description: 'Best dental services in Dehradun',
+  description: 'Best dental clinic in Dehradun',
 };
 
 export default function RootLayout({
