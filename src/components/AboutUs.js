@@ -46,7 +46,7 @@ export default function AboutUs() {
         <p className="text-base md:text-lg text-gray-700 leading-relaxed mb-6">
           At{' '}
           <span className="font-semibold text-[#18A2BB]">
-            Dr. Verma's Dental Surgery Center
+            Dr. Verma&lsquo;s Dental Surgery Center
           </span>
           , we are committed to providing the{' '}
           <span className="font-semibold text-[#18A2BB]">
@@ -63,9 +63,9 @@ export default function AboutUs() {
           <br />
           Dr. Verma has dedicated years to perfecting his skills and integrating
           the latest advancements in dentistry. Combined with our welcoming
-          office, precise care, and a premier team, we’re honored to be Dehradun
-          City’s top-rated choice for enhancing your smile. There’s a reason why
-          patients choose us as their preferred dentist.
+          office, precise care, and a premier team, we&lsquo;re honored to be
+          Dehradun City&lsquo;s top-rated choice for enhancing your smile.
+          There&lsquo;s a reason why patients choose us as their preferred dentist.
         </p>
       </section>
 
