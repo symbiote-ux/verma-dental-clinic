@@ -90,15 +90,9 @@ export default function Services() {
         </h1>
         <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
           We believe every patient deserves exceptional dental care and address
-          every concern with our full attention and expertise.
-        </p>
-
-        <p className="text-lg md:text-xl text-gray-700 leading-relaxed mt-4">
-          Dr. Verma has spent years perfecting his skills and incorporating the
-          latest developments in dentistry for his patients. Combined with our
+          every concern with our full attention and expertise. Combined with our
           welcoming office, precision care, and premier team, we’re proud to be
-          Dehradun City’s top-rated choice for improving your smile. There’s a
-          reason patients choose us as their preferred dentist.
+          Dehradun City’s top-rated choice for improving your smile.
         </p>
       </section>
 
