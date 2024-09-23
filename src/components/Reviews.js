@@ -24,12 +24,12 @@ export default function Reviews() {
   return (
     <div id="reviews" className="max-w-7xl mx-auto">
       {/* Page Heading */}
-      <h1 className="text-2xl md:text-3xl font-bold text-center mb-8">
+      <h1 className="text-2xl md:text-3xl font-bold text-center mb-8 px-6 sm:px-0">
         What Our Customers Tell About Us
       </h1>
 
       {/* Horizontally Scrollable Reviews Section */}
-      <div className="overflow-x-auto pb-6">
+      <div className="overflow-x-auto pb-6 pl-4">
         <div className="flex gap-4">
           {reviews.map((review, index) => (
             <div
