@@ -142,7 +142,7 @@ export default function Services() {
         <h2 className="text-2xl md:text-3xl font-bold text-center mb-6">
           Our Services
         </h2>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 max-w-6xl mx-auto">
+        <div className="grid grid-cols-2 gap-4 max-w-6xl mx-auto md:grid-cols-3 lg:grid-cols-4">
           {actualServices.map((service, index) => (
             <div
               key={index}

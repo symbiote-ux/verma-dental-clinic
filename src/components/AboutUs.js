@@ -65,7 +65,8 @@ export default function AboutUs() {
           the latest advancements in dentistry. Combined with our welcoming
           office, precise care, and a premier team, we&lsquo;re honored to be
           Dehradun City&lsquo;s top-rated choice for enhancing your smile.
-          There&lsquo;s a reason why patients choose us as their preferred dentist.
+          There&lsquo;s a reason why patients choose us as their preferred
+          dentist.
         </p>
       </section>
 
@@ -76,14 +77,14 @@ export default function AboutUs() {
         </h2>
 
         <div className="overflow-x-auto">
-          <div className="flex flex-nowrap gap-8">
+          <div className="flex flex-nowrap gap-6">
             {doctors.map((doctor, index) => (
               <div
                 key={index}
-                className="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col flex-shrink-0 w-80"
+                className="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col flex-shrink-0 w-64 md:w-72 h-[22rem]" // Reduced the card size
               >
-                {/* Profile Picture */}
-                <div className="relative h-48 w-full">
+                {/* Profile Picture (60% height) */}
+                <div className="relative h-[60%] w-full">
                   <Image
                     src={doctor.imageSrc}
                     alt={doctor.name}
@@ -93,18 +94,24 @@ export default function AboutUs() {
                   />
                 </div>
 
-                {/* Doctor Details */}
-                <div className="p-6 flex flex-col flex-grow">
-                  <h3 className="text-xl font-bold text-gray-800">
-                    {doctor.name}
-                  </h3>
-                  <h4 className="text-md font-semibold text-gray-600 mb-2">
-                    {doctor.role}
-                  </h4>
-                  <p className="text-gray-500 mb-4">
-                    {doctor.yearsOfExperience} years of experience
-                  </p>
-                  <p className="text-gray-700">{doctor.details}</p>
+                {/* Doctor Details (40% height) */}
+                <div className="p-4 flex flex-col justify-between h-[40%]">
+                  <div>
+                    <h3 className="text-lg md:text-xl font-bold text-gray-800">
+                      {doctor.name}
+                    </h3>
+                    <h4 className="text-sm md:text-md font-semibold text-gray-600">
+                      {doctor.role}
+                    </h4>
+                    <p className="text-sm text-gray-500">
+                      {doctor.yearsOfExperience} years of experience
+                    </p>
+                  </div>
+
+                  {/* Read More Button */}
+                  <button className="flex items-center justify-center text-white bg-[#18A2BB] rounded-md border-2 border-transparent hover:bg-white text-lg hover:text-[#18A2BB] hover:border-[#18A2BB] transition-all duration-300">
+                    Know More
+                  </button>
                 </div>
               </div>
             ))}
