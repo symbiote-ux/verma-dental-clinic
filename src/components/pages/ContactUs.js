@@ -8,9 +8,6 @@ export default function ContactUs() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
         {/* Map Section */}
         <div className="w-full">
-          <h2 className="font-semibold text-lg md:text-xl mb-4">
-            Find Us Here
-          </h2>
           <div className="w-full h-64 md:h-96 rounded-lg overflow-hidden">
             <iframe
               title="Location Map"
@@ -25,9 +22,6 @@ export default function ContactUs() {
         </div>
         {/* Contact Information */}
         <div className="space-y-6">
-          <h2 className="font-semibold text-lg md:text-xl">
-            Contact Information
-          </h2>
           <ul className="space-y-4">
             <li className="text-sm md:text-base lg:text-lg">
               <strong>Address:</strong> <br /> Dr. Ram Parkash Verma Memorial

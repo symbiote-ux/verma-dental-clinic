@@ -1,4 +1,4 @@
-import Reviews from '@/components/Reviews';
+import Reviews from '@/components/pages/Reviews';
 
 export default function About() {
   return <Reviews />;

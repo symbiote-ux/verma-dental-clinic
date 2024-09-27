@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 
-export default function ProductPhotoCollage() {
+export const ProductPhotoCollage = () => {
   const images = [
     '/images/photo-front-view.jpg',
     '/images/photo-waiting-area-1.jpg',
@@ -26,7 +26,7 @@ export default function ProductPhotoCollage() {
   ];
 
   return (
-    <div className="relative w-full h-screen flex justify-center items-center overflow-y-auto bg-gray-100 py-6 mb-5">
+    <div className="relative w-full h-screen flex justify-center items-center overflow-y-auto bg-gray-100 py-6">
       {/* Photo Grid */}
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 h-full">
         {images.map((src, index) => (
@@ -46,4 +46,4 @@ export default function ProductPhotoCollage() {
       </div>
     </div>
   );
-}
+};
