@@ -3,6 +3,18 @@ import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
+const menuItems = [
+  { title: 'Home', route: '/' },
+  { title: 'About', route: '/about' },
+  { title: 'Services', route: '/services' },
+  {
+    title: 'Braces',
+    route: '/braces',
+  },
+  { title: 'Reviews', route: '/reviews' },
+  { title: 'Contact', route: '/contact' },
+];
+
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -67,69 +79,33 @@ export default function Header() {
 
         {/* Navbar Links - visible on large screens */}
         <nav className="hidden md:flex space-x-6 items-center text-lg">
-          <Link
-            href="#about"
-            className="text-[#1D1D1D] hover:text-[#18A2BB] font-semibold transition duration-300"
-          >
-            About
-          </Link>
-          <Link
-            href="#services"
-            className="text-[#1D1D1D] hover:text-[#18A2BB] font-semibold transition duration-300"
-          >
-            Services
-          </Link>
-          <Link
-            href="#reviews"
-            className="text-[#1D1D1D] hover:text-[#18A2BB] font-semibold transition duration-300"
-          >
-            Reviews
-          </Link>
-          <Link
-            href="#contact"
-            className="text-[#1D1D1D] hover:text-[#18A2BB] font-semibold transition duration-300"
-          >
-            Contact
-          </Link>
+          {menuItems.map((item) => (
+            <Link
+              key={item.route}
+              className="text-[#1D1D1D] hover:text-[#18A2BB] font-semibold transition duration-300"
+              href={item.route}
+            >
+              {item.title}
+            </Link>
+          ))}
         </nav>
       </div>
 
       {/* Mobile Menu */}
       {menuOpen && (
         <nav className="md:hidden bg-[#18A2BB] shadow-md">
-          <ul className="flex flex-col items-center space-y-2 p-4">
-            <li>
-              <Link
-                href="#about"
-                className="text-white font-semibold text-lg hover:text-[#424242]"
-              >
-                About
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="#services"
-                className="text-white font-semibold text-lg hover:text-[#424242]"
-              >
-                Services
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="#reviews"
-                className="text-white font-semibold text-lg hover:text-[#424242]"
-              >
-                Reviews
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="#contact"
-                className="text-white font-semibold text-lg hover:text-[#424242]"
-              >
-                Contact Us
-              </Link>
-            </li>
+          <ul className="flex flex-col items-start space-y-2 p-4">
+            {menuItems.map((item) => (
+              <li key={item.route} className="w-full">
+                <Link
+                  href={item.route}
+                  className="block w-full text-white font-semibold text-lg px-4 py-2 hover:bg-[#FFF7F0] hover:text-[#1D1D1D] transition duration-300"
+                  onClick={() => setMenuOpen(false)} // Close the menu after clicking a link
+                >
+                  {item.title}
+                </Link>
+              </li>
+            ))}
           </ul>
         </nav>
       )}

@@ -14,7 +14,15 @@ export default function Footer() {
             <ul className="mt-6 space-y-3">
               <li>
                 <Link
-                  href="#about"
+                  href="/"
+                  className="hover:text-[#0f4e5f] font-medium text-base md:text-lg transition duration-300"
+                >
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/about"
                   className="hover:text-[#0f4e5f] font-medium text-base md:text-lg transition duration-300"
                 >
                   About
@@ -22,7 +30,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="#services"
+                  href="/services"
                   className="font-medium hover:text-[#0f4e5f] text-base md:text-lg transition duration-300"
                 >
                   Services
@@ -30,7 +38,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="#contact"
+                  href="/contact"
                   className="font-medium hover:text-[#0f4e5f] text-base md:text-lg transition duration-300"
                 >
                   Contact Us
