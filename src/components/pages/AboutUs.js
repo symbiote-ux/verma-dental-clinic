@@ -16,7 +16,7 @@ export default function AboutUs() {
   };
 
   return (
-    <div id="about" className="max-w-7xl mx-auto p-4">
+    <div id="about" className="max-w-7xl mx-auto p-4 mt-4">
       {/* About Clinic Section */}
       <section className="mb-12">
         <h1 className="text-2xl md:text-3xl font-bold text-center mb-6">
@@ -66,8 +66,9 @@ export default function AboutUs() {
                 className="bg-white rounded-lg shadow-lg overflow-hidden min-h-[350px] md:min-h-[400px]"
               >
                 <div
-                  className={`flex flex-col md:min-h-[400px] ${isEven ? 'md:flex-row' : 'md:flex-row-reverse'
-                    }`}
+                  className={`flex flex-col md:min-h-[400px] ${
+                    isEven ? 'md:flex-row' : 'md:flex-row-reverse'
+                  }`}
                 >
                   {/* Profile Picture */}
                   <div className="relative w-full md:w-1/2 h-64 md:h-auto">
@@ -84,13 +85,13 @@ export default function AboutUs() {
                   {/* Doctor Info */}
                   <div className="p-6 flex flex-col w-full md:w-1/2">
                     <div>
-                      <h3 className="text-lg md:text-xl font-bold text-gray-800">
+                      <h3 className="text-lg md:text-xl lg:text-2xl font-bold text-gray-800">
                         {doctor.name}
                       </h3>
                       <h4 className="text-sm md:text-md font-semibold text-gray-600">
                         {doctor.role}
                       </h4>
-                      <p className="text-sm text-gray-500">
+                      <p className="text-md text-gray-500">
                         {doctor.yearsOfExperience} years of experience
                       </p>
                     </div>
@@ -98,8 +99,9 @@ export default function AboutUs() {
                     {/* Doctor Details */}
                     <div
                       id={`doctor-details-${index}`}
-                      className={`mt-4 text-sm text-gray-700 ${activeIndex === index ? 'block' : 'hidden'
-                        } md:block`}
+                      className={`mt-4 text-sm sm:text-lg text-gray-700 ${
+                        activeIndex === index ? 'block' : 'hidden'
+                      } md:block`}
                       role="region"
                       aria-labelledby={`doctor-${index}-header`}
                     >
@@ -115,8 +117,9 @@ export default function AboutUs() {
                     >
                       {activeIndex === index ? 'Hide Details' : 'Know More'}
                       <svg
-                        className={`w-5 h-5 ml-2 transition-transform duration-300 ${activeIndex === index ? 'transform rotate-180' : ''
-                          }`}
+                        className={`w-5 h-5 ml-2 transition-transform duration-300 ${
+                          activeIndex === index ? 'transform rotate-180' : ''
+                        }`}
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
