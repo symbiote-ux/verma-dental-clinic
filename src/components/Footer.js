@@ -1,5 +1,7 @@
 'use client';
 import Link from 'next/link';
+import { MobileDropdownMenu } from './utils/drop-down';
+import { menuItems } from './utils/menu-items';
 
 export default function Footer() {
   return (
@@ -11,31 +13,24 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2  gap-10">
           <div className="flex flex-col items-start">
             <h2 className="font-semibold text-lg md:text-xl">Quick Links</h2>
-            <ul className="mt-6 space-y-3">
-              <li>
-                <Link
-                  href="#about"
-                  className="hover:text-[#0f4e5f] font-medium text-base md:text-lg transition duration-300"
-                >
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#services"
-                  className="font-medium hover:text-[#0f4e5f] text-base md:text-lg transition duration-300"
-                >
-                  Services
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#contact"
-                  className="font-medium hover:text-[#0f4e5f] text-base md:text-lg transition duration-300"
-                >
-                  Contact Us
-                </Link>
-              </li>
+            <ul className="mt-6 w-full">
+              <ul className="flex flex-col items-start">
+                {menuItems.map((item) =>
+                  item.subGroup ? (
+                    <MobileDropdownMenu key={item.route} item={item} setMenuOpen={() => { }} />
+                  ) : (
+                    <li key={item.route} className="w-full">
+                      <Link
+                        href={item.route}
+                        className="block w-full text-white font-semibold text-lg px-4 py-2 hover:bg-[#FFF7F0] hover:text-[#1D1D1D] transition duration-300"
+                        onClick={() => setMenuOpen(false)}
+                      >
+                        {item.title}
+                      </Link>
+                    </li>
+                  )
+                )}
+              </ul>
             </ul>
           </div>
 

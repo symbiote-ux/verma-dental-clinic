@@ -5,6 +5,7 @@ const restorativeDentistry = '/logo/restorative-dentistry.png';
 const cosmeticDentistry = '/logo/cosmetic-dentistry.png';
 const specialisedCare = '/logo/specialised-care.png';
 const orthodontics = '/logo/orthodontics.png';
+const intraOralScanner = '/images/photo-vaccum-pump-1.png';
 
 const keyFeatures = [
   {
@@ -33,9 +34,15 @@ const keyFeatures = [
   },
   {
     icon: orthodontics,
-    title: 'Orthodontics & Advanced Services',
+    title: 'Orthodontics',
     description:
       'Straighten your teeth and improve alignment with our orthodontic treatments, or prepare for surgery with presurgical orthodontics.',
+  },
+  {
+    icon: intraOralScanner,
+    title: 'Advanced Services with Digital Dentistry',
+    description:
+      'We are equipped with the latest INTRA ORAL SCANNER from Denstply Sirona which function by projecting structured light which is recorded as individual Images and a 3D model is generated.',
   },
 ];
 
