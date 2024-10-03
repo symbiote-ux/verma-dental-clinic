@@ -14,9 +14,9 @@ export default function Home() {
     '/images/photo-vaccum-pump-2.jpg',
   ];
   const results = [
-    '/treatmentGallery/00.jpeg',
-    '/treatmentGallery/01.jpeg',
-    '/treatmentGallery/1.png',
+    '/treatmentGallery/11.jpeg',
+    '/treatmentGallery/12.jpeg',
+    '/treatmentGallery/13.jpeg',
   ];
   return (
     <main>
