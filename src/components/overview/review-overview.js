@@ -20,8 +20,8 @@ export const ReviewOverview = () => {
             <div className="flex-grow">
               <h3 className="text-lg font-semibold mb-1">Susan John</h3>
               <p className="text-sm md:text-base">
-                "The doctor was very understanding and helped to provide the
-                best treatment plan for my condition at the best price."
+                &quot;The doctor was very understanding and helped to provide the
+                best treatment plan for my condition at the best price.&quot;
               </p>
             </div>
           </div>
@@ -34,8 +34,8 @@ export const ReviewOverview = () => {
             <div className="flex-grow">
               <h3 className="text-lg font-semibold mb-1">Aslam Khan</h3>
               <p className="text-sm md:text-base">
-                "It's a great experience getting my teeth fixed. Dr. Sudhanshu
-                explains everything in detail."
+                &quot;It&apos;s a great experience getting my teeth fixed. Dr. Sudhanshu
+                explains everything in detail.&quot;
               </p>
             </div>
           </div>
