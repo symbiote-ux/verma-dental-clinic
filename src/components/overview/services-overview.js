@@ -72,7 +72,7 @@ const ServicesSection = () => {
       {/* View More / View Less Button */}
       <div className="text-center mt-8">
         <button
-          className="text-white bg-[#18A2BB] px-4 py-2 rounded-lg hover:bg-white  hover:text-[#18A2BB] focus:outline-none focus:ring-2 focus:ring-[#18A2BB]"
+          className="sm:hidden text-white bg-[#18A2BB] px-4 py-2 rounded-lg hover:bg-white border-2  hover:text-[#18A2BB] hover:border-[#18A2BB] focus:outline-none focus:ring-2 focus:ring-[#18A2BB]"
           onClick={toggleShowAll}
         >
           {showAll ? 'View Less' : 'View More'}
