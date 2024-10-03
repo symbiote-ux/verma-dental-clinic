@@ -9,7 +9,7 @@ export const ReviewOverview = () => {
       </h2>
 
       <div className="gap-6 pb-6">
-        <div className="flex gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {/* Example Reviews */}
           <div className="bg-white p-4 shadow-lg rounded-lg flex flex-col gap-4 min-w-[300px] md:min-w-[400px]">
             <div className="flex-shrink-0">
@@ -40,15 +40,15 @@ export const ReviewOverview = () => {
             </div>
           </div>
 
-          {/* Button to Read More Reviews */}
-          <div className="bg-white p-4 shadow-lg rounded-lg flex flex-col justify-center gap-4 min-w-[300px] md:min-w-[400px]">
-            <Link
-              href="/reviews"
-              className="bg-[#18A2BB] text-white py-2 px-6 rounded-lg text-center text-sm md:text-base hover:bg-[#0f4e5f] transition duration-300"
-            >
-              Read More Reviews
-            </Link>
-          </div>
+        </div>
+        {/* Button to Read More Reviews */}
+        <div className="bg-white p-4 shadow-lg rounded-lg flex flex-col justify-center gap-4 min-w-[300px] md:min-w-[400px]">
+          <Link
+            href="/reviews"
+            className="bg-[#18A2BB] text-white py-2 px-6 rounded-lg text-center text-sm md:text-base hover:bg-[#0f4e5f] transition duration-300"
+          >
+            Read More Reviews
+          </Link>
         </div>
       </div>
     </div>

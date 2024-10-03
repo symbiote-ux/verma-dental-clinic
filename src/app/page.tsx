@@ -17,9 +17,6 @@ export default function Home() {
     '/treatmentGallery/00.jpeg',
     '/treatmentGallery/01.jpeg',
     '/treatmentGallery/1.png',
-    '/treatmentGallery/2.png',
-    '/treatmentGallery/3.png',
-    '/treatmentGallery/5.jpeg',
   ];
   return (
     <main>
@@ -27,7 +24,7 @@ export default function Home() {
       <Services />
       <ProductPhotoCollage images={images} />
       <ReviewOverview />
-      <ProductPhotoCollage images={results} />
+      <ProductPhotoCollage link="/results" images={results} />
       <AboutDoctorOverview />
     </main>
   );
