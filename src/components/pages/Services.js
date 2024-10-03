@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import ServicesSection from '../overview/services-overview';
 
 const generalDentistry = '/logo/general-dentistry.png';
 const restorativeDentistry = '/logo/restorative-dentistry.png';
@@ -44,47 +45,6 @@ const keyFeatures = [
     description:
       'We are equipped with the latest INTRA ORAL SCANNER from Denstply Sirona which function by projecting structured light which is recorded as individual Images and a 3D model is generated.',
   },
-];
-
-const actualServices = [
-  'Acrylic Partial Denture',
-  'BPS Dentures Fixing',
-  'Crowns and Bridges Fixing',
-  'Artificial Teeth',
-  'Cast Partial Denture',
-  'Conscious Sedation',
-  'Conservative Dentistry',
-  'Cosmetic/ Aesthetic Dentistry',
-  'Complete/Partial Dentures Fixing',
-  'Impaction / Impacted Tooth Extraction',
-  'Endo Surgery Or Apicoectomy',
-  'Endosurgery',
-  'Tooth Extraction',
-  'Dental Fillings',
-  'Fixed Partial Denture (FPD)',
-  'Flexible Partial/Complete Denture',
-  'Forensic Odontology',
-  'Gum Disease Treatment/ Surgery',
-  'Flap Surgery',
-  'Dental Implant Fixing',
-  'Inlays and Onlays',
-  'Invisible/Clear Braces',
-  'Laminates',
-  'Laser Gum Surgery',
-  'Laser Surgery',
-  'Periodontal Flap Surgery',
-  'Post and Core',
-  'RCT - Root Canal Treatment',
-  'Scaling / Polishing',
-  'Dental Sealant',
-  'Smile Design',
-  'Teeth Whitening',
-  'Teeth Reshaping',
-  'Tooth Coloured Fillings',
-  'Veneers / Laminates',
-  'Dental Braces Fixing',
-  'Wedding Smile Planner',
-  'Presurgical Orthodontics',
 ];
 
 export default function Services() {
@@ -137,23 +97,7 @@ export default function Services() {
           </div>
         </div>
       </section>
-
-      {/* Actual Services */}
-      <section className="mt-12">
-        <h2 className="text-2xl md:text-3xl font-bold text-center mb-6">
-          Our Services
-        </h2>
-        <div className="grid grid-cols-2 gap-4 max-w-6xl mx-auto md:grid-cols-3 lg:grid-cols-4">
-          {actualServices.map((service, index) => (
-            <div
-              key={index}
-              className="bg-white p-4 rounded-lg shadow-md flex items-center justify-center text-center text-sm font-medium text-gray-800 hover:bg-gray-50"
-            >
-              {service}
-            </div>
-          ))}
-        </div>
-      </section>
+      <ServicesSection />
     </div>
   );
 }
