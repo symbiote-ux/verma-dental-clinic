@@ -53,13 +53,13 @@ export default function Services() {
       {/* Heading and Paragraph */}
       <section className="text-center max-w-4xl mx-auto mb-10">
         <h1 className="text-3xl md:text-5xl font-bold mb-4">
-          Welcome to Dr. Verma’s Dental Surgery & Braces Centre
+          Welcome to Dr. Verma&apos;s Dental Surgery & Braces Centre
         </h1>
         <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
           We believe every patient deserves exceptional dental care and address
           every concern with our full attention and expertise. Combined with our
-          welcoming office, precision care, and premier team, we’re proud to be
-          Dehradun City’s top-rated choice for improving your smile.
+          welcoming office, precision care, and premier team, we&apos;re proud
+          to be Dehradun City&apos;s top-rated choice for improving your smile.
         </p>
       </section>
 

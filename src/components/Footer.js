@@ -17,7 +17,11 @@ export default function Footer() {
               <ul className="flex flex-col items-start">
                 {menuItems.map((item) =>
                   item.subGroup ? (
-                    <MobileDropdownMenu key={item.route} item={item} setMenuOpen={() => { }} />
+                    <MobileDropdownMenu
+                      key={item.route}
+                      item={item}
+                      setMenuOpen={() => {}}
+                    />
                   ) : (
                     <li key={item.route} className="w-full">
                       <Link
@@ -73,7 +77,7 @@ export default function Footer() {
 
         {/* Copyright Section */}
         <div className="mt-10 border-t border-gray-300 pt-6 text-center text-sm md:text-base">
-          © {new Date().getFullYear()} Dr. Verma’s Dental Surgery & Braces
+          © {new Date().getFullYear()} Dr. Verma&apos;s Dental Surgery & Braces
           Centre. All rights reserved.
         </div>
       </div>
